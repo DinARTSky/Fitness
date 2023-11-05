@@ -1,0 +1,39 @@
+.period__list {
+  display: flex;
+  column-gap: 50px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @include vp-1365 {
+    column-gap: 55px;
+  }
+ }
+
+.period__item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(16, 38, 84, 0.5);
+  padding-bottom: 10px;
+  position: relative;
+
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 12px;
+  }
+}
+
+.period__item--checked {
+  color: $color-default-black;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #D10A42;
+    left: 0;
+    top: 30px;
+  }
+
+}

@@ -1,0 +1,154 @@
+.price {
+padding: 126px 103px 120px;
+background-color: #f8f9fC;
+position: relative;
+
+  @include vp-1365 {
+    padding: 100px 103px 120px;
+  }
+}
+
+.price__title{
+  margin-bottom: 34px;
+
+  @include vp-1365 {
+    margin-bottom: 37px;
+  }
+}
+
+.price__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__period {
+  margin-bottom: 37px;
+
+  @include vp-1365 {
+    margin-bottom: 44px;
+  }
+}
+
+.price__list {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+
+  @include vp-1365 {
+    flex-direction: column;
+  }
+}
+
+.price__item {
+  width: 360px;
+  background-color: #ffffff;
+  padding: 67px 77px 49px 78px;
+
+  @include vp-1365 {
+    width: 440px;
+    padding: 67px 77px 65px 78px;
+  }
+
+  &--checked {
+    border: 7px solid;
+    border-image: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1))1;
+    padding: 60px 70px 58px 71px;
+  }
+}
+
+.price__item--checked .price__description {
+  margin-left: -3px;
+}
+
+.price__card-title {
+  font-family: $ff-placeholder;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: normal;
+  margin-bottom: 6px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+}
+
+.price__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+
+  @include vp-1365 {
+    margin-bottom: 21px;
+  }
+}
+
+.price__cost--shadow {
+  position: relative;
+  font-weight: 700;
+  color: rgba(232, 232, 232, 0.48);
+  font-size: 100px;
+  line-height: 150px;
+  margin-bottom: 29px;
+
+  @include vp-1365 {
+    margin-bottom: 18px;
+  }
+}
+
+.price__cost-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 54px;
+  left: 19px;
+
+  @include vp-1365 {
+    left: 60px;
+  }
+}
+
+.price__cost {
+  color: $color-neon-blue;
+  font-size: 60px;
+  line-height: 90px;
+}
+
+.price__btn {
+  box-sizing: border-box;
+  color: $color-default-black;
+  padding: 25px 42px;
+  border: 2px solid $color-default-black;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+
+  @include vp-1365 {
+    padding: 20px 42px;
+  }
+}
+
+.price__item--checked .price__btn {
+  padding: 27px 44px;
+  border: none;
+  background: var(--1, linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%));
+  color: #ffffff;
+
+  @include vp-1365 {
+    padding: 22px 44px;
+  }
+}
+
+.price__image {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  z-index: 1;
+}

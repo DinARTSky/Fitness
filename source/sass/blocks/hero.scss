@@ -2,14 +2,34 @@
   display: flex;
   justify-content: start;
   padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 30px;
+    display: block;
+  }
 }
 
 .hero__content--text {
   padding: 62px 70px 62px 0;
-  background-color: blue;
   display: grid;
   grid-template-columns: 120px 265px;
+  grid-template-rows: auto 66px;
   align-items: center;
+
+  @include vp-1365 {
+    padding: 31px 30px 31px 0;
+    grid-template-columns: 139px 185px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 128px 162px;
+    padding: 40px 0;
+    row-gap: 50px;
+  }
 }
 
 .hero__description {
@@ -17,23 +37,48 @@
   line-height: 22px;
   text-align: right;
   padding-right: 7px;
+  grid-row: -1/1;
+
+  @include vp-1365 {
+    padding-right: 26px;
+  }
+
+  @include vp-767 {
+    grid-column: 1/2;
+    line-height: 20px;
+    padding-right: 15px;
+  }
 }
 
-.hero__title-subtitle-buy {
+/*.hero__title-subtitle-buy {
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: space-between;
   height: 100%;
   gap: 50px;
-}
+
+  @include vp-1365 {
+    align-items: stretch;
+    gap: 45px;
+  }
+
+  @include vp-767 {
+    gap: 59px;
+  }
+}*/
 
 .hero__title-subtitle {
     display: flex;
     flex-direction: column;
     align-items: end;
-    justify-content: space-between;
+    gap: 10px;
     height: 100%;
+    grid-row: 1/2;
+
+    @include vp-767 {
+      gap: 19px;
+    }
 }
 
 .hero__subtitle {
@@ -46,9 +91,49 @@
   line-height: 110px;
   text-align: end;
   letter-spacing: 0.05em;
+
+  @include vp-1365 {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: normal;
+  }
+
+  @include vp-767 {
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.hero__buy {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-left: 34px;
+
+  @include vp-1365 {
+    margin: 0;
+    margin-top: auto;
+  }
+
+  @include vp-767 {
+    grid-column: -1/1;
+  }
 }
 
 .hero__btn {
-  padding: 25px 55px;
+  padding: 26px 55px 24px;
   border: 2px solid $color-default-white;
+
+  @include vp-1365 {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+}
+
+.hero__image {
+  @include vp-767 {
+    display: none;
+  }
 }

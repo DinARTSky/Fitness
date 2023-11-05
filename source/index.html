@@ -17,7 +17,8 @@
           <span class="header__phone">8-800-555-55-55</span>
         </header>
         <section class="hero">
-          <div class="hero__content hero__content--text">
+          <!--
+            <div class="hero__content hero__content--text">
             <ul class="hero__description list-reset">
               <li class="hero__item">Тренажёрный зал</li>
               <li class="hero__item">Групповые занятия</li>
@@ -33,19 +34,162 @@
               </div>
             </div>
           </div>
+          -->
+          <div class="hero__content hero__content--text">
+            <ul class="hero__description list-reset">
+              <li class="hero__item">Тренажёрный зал</li>
+              <li class="hero__item">Групповые занятия</li>
+              <li class="hero__item">Кардио-зона</li>
+            </ul>
+           <!-- <div class="hero__title-subtitle-buy">-->
+              <div class="hero__title-subtitle">
+                <span class="title hero__subtitle">OMCK</span>
+                <h2 class="title hero__title">ФИТНЕС ЦЕНТР</h2>
+              </div>
+              <div class="hero__buy">
+                <a class="btn hero__btn">Купить абонемент</a>
+              </div>
+            <!--</div>-->
+          </div>
           <div class="hero__content">
             <picture>
               <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/hero-image.jpg 1x, img/hero-image@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">-->
-              <img class="hero__image" src="img/hero-image.jpg" srcset="img/hero-image@2x.jpg 2x" alt="Фото спортсмена" width="500" height="524">
+              <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">-->
+              <source media="(min-width: 1366px)" srcset="img/hero-image-desktop.jpg 1x, img/hero-image-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/hero-image-tablet.jpg 1x, img/hero-image-tablet@2x.jpg 2x">
+              <img class="hero__image" src="img/hero-image-desktop.jpg" alt="Фото спортсмена" width="500" height="524">
             </picture>
           </div>
         </section>
       </div>
     </div>
+
+    <section class="presentation">
+      <div class="presentation__content presentation__content--text">
+        <h2 class="title presentation__title">Тренажерный зал</h2>
+        <p class="presentation__subtitle">Просторный зал площадью 900 кв/м</p>
+        <ul class="presentation__list list-reset">
+          <li class="presentation__item">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным&nbsp;оборудованием для&nbsp;всех спортсменов.
+          </li>
+          <li class="presentation__item presentation__item--second">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+          </li>
+        </ul>
+      </div>
+      <div class="presentation__content presentation__content--image">
+        <picture>
+          <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">-->
+
+          <source media="(min-width: 1366px)" srcset="img/presentation-desktop.jpg 1x, img/presentation-desktop@2x.jpg 2x" width="660" height="401">
+          <source media="(min-width: 768px)" srcset="img/presentation-tablet.jpg 1x, img/presentation-tablet@2x.jpg 2x" width="678" height="345">
+          <img class="presentation__image" src="img/presentation-mobile.jpg" alt="Фото спортзала" width="320" height="313">
+        </picture>
+        <div class="presentation__video video">
+          <picture>
+            <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">-->
+            <source media="(min-width: 1366px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="364" height="228">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="265" height="167">
+            <img src="img/video-mobile.jpg" alt="обложка видео" width="320" height="167">
+          </picture>
+          <div class="video__wrapper"></div>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Кнопка воспроизведения видео</span>
+            <div class="video__button-circle">
+                <svg class="video__icon" aria-hidden="true" focusable="false"
+                  width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white"/>
+                </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Секция Абонементы-->
+    <section class="price">
+      <div class="container price__container">
+        <h2 class="title price__title">Абонементы</h2>
+        <div class="price__period period">
+          <ul class="period__list list-reset">
+            <li class="period__item period__item--checked">1 месяц</li>
+            <li class="period__item">6 месяцев</li>
+            <li class="period__item">12 месяцев</li>
+          </ul>
+        </div>
+
+        <div class="price__list-wrapper">
+          <ul class="price__list list-reset">
+            <li class="price__item">
+              <h3 class="title price__card-title">С тренером</h3>
+              <p class="price__description">12 занятий</p>
+              <div class="price__cost--shadow">
+                5000
+                <div class="price__cost-wrapper">
+                  <p class="price__cost">5000</p>
+                  <svg aria-hidden="true" focusable="false"
+                  width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="price__buy">
+                <a class="btn price__btn">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="price__item price__item--checked">
+              <h3 class="title price__card-title">Дневной</h3>
+              <p class="price__description">с 8:00 до 17:00</p>
+              <div class="price__cost--shadow">
+                1700
+                <div class="price__cost-wrapper">
+                  <p class="price__cost">1700</p>
+                  <svg aria-hidden="true" focusable="false"
+                  width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="price__buy">
+                <a class="btn price__btn">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="price__item">
+              <h3 class="title price__card-title">Полный день</h3>
+              <p class="price__description">с 8:00 до 22:00</p>
+              <div class="price__cost--shadow">
+                2700
+                <div class="price__cost-wrapper">
+                  <p class="price__cost">2700</p>
+                  <svg aria-hidden="true" focusable="false"
+                  width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="price__buy">
+                <a class="btn price__btn">Купить абонемент</a>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+
+        <img class="price__image" src="img/plates.png" alt="Фото блинов для штанги" width="287" height="384" object-fit: cover>
+
+
+    </section>
     <div class="wrapper">
       <header>
         <div class="container"></div>
