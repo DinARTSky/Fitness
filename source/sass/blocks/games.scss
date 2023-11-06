@@ -1,0 +1,99 @@
+.games {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #ffffff;
+}
+
+.games__text-wrapper {
+  display: flex;
+  gap: 68px;
+  margin-bottom: 22px;
+}
+
+.games__item--text {
+  padding: 80px;
+  background-color: #ed0233;
+}
+
+
+.games__title {
+  font-size: 82px;
+  line-height: 76px;
+  letter-spacing: 0.03em;
+  width: 180px;
+}
+
+.games__date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 19px;
+}
+
+.games__caption {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 8px;
+  margin-top: -1px;
+}
+
+.games__content {
+  display: flex;
+  border-top: 1px solid #ffffff;
+  gap: 7px;
+  padding-top: 8px;
+}
+
+.games__date {
+  display: flex;
+  flex-direction: column;
+}
+
+.games__day {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: -4px;
+}
+
+.games__day-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.games__month,
+.games__year {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.games__content--time {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 5px;
+}
+
+.games__time {
+  display: flex;
+  flex-direction: column;
+}
+
+.games__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 56px;
+}
+
+.games__btn {
+  border: 2px solid #ffffff;
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 24px;
+  display: block;
+}
+

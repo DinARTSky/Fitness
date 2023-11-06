@@ -1,10 +1,17 @@
 .price {
-padding: 126px 103px 120px;
+padding-top: 126px;
+padding-bottom: 120px;
 background-color: #f8f9fC;
 position: relative;
 
   @include vp-1365 {
-    padding: 100px 103px 120px;
+    padding-top: 100px;
+  padding-bottom: 120px;
+  }
+
+  @include vp-767 {
+    padding-top: 79px;
+    padding-bottom: 70px;
   }
 }
 
@@ -13,6 +20,10 @@ position: relative;
 
   @include vp-1365 {
     margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 26px;
   }
 }
 
@@ -28,6 +39,10 @@ position: relative;
   @include vp-1365 {
     margin-bottom: 44px;
   }
+
+  @include vp-767 {
+    margin-bottom: 34px;
+  }
 }
 
 .price__list {
@@ -39,6 +54,10 @@ position: relative;
 
   @include vp-1365 {
     flex-direction: column;
+  }
+
+  @include vp-767 {
+    gap: 35px;
   }
 }
 
@@ -52,15 +71,29 @@ position: relative;
     padding: 67px 77px 65px 78px;
   }
 
+  @include vp-767 {
+    width: 290px;
+    padding: 51px 42px 50px 42px;
+  }
+
   &--checked {
     border: 7px solid;
     border-image: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1))1;
     padding: 60px 70px 58px 71px;
+
+    @include vp-767 {
+      width: 290px;
+      padding: 44px 35px 43px 35px;
+    }
   }
 }
 
 .price__item--checked .price__description {
   margin-left: -3px;
+
+  @include vp-767 {
+    margin-left: -1px;
+  }
 }
 
 .price__card-title {
@@ -76,6 +109,12 @@ position: relative;
     line-height: 24px;
     margin-bottom: 13px;
   }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
 }
 
 .price__description {
@@ -85,6 +124,12 @@ position: relative;
   margin-bottom: 15px;
 
   @include vp-1365 {
+    margin-bottom: 21px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
     margin-bottom: 21px;
   }
 }
@@ -100,6 +145,12 @@ position: relative;
   @include vp-1365 {
     margin-bottom: 18px;
   }
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+    margin-bottom: 18px;
+  }
 }
 
 .price__cost-wrapper {
@@ -113,12 +164,29 @@ position: relative;
   @include vp-1365 {
     left: 60px;
   }
+
+  @include vp-767 {
+    top: 44px;
+    left: 37px;
+    gap: 8px;
+  }
 }
 
 .price__cost {
   color: $color-neon-blue;
   font-size: 60px;
   line-height: 90px;
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.price__icon {
+  @include vp-767 {
+    height: 33px;
+  }
 }
 
 .price__btn {
@@ -132,6 +200,10 @@ position: relative;
 
   @include vp-1365 {
     padding: 20px 42px;
+  }
+
+  @include vp-767 {
+    font-weight: 700;
   }
 }
 
@@ -151,4 +223,8 @@ position: relative;
   right: 0;
   bottom: -150px;
   z-index: 1;
+
+  @include vp-767 {
+    display: none;
+  }
 }
