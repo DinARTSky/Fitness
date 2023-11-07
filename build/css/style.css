@@ -1835,6 +1835,12 @@ p {
      border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
   padding: 60px 70px 58px 71px;
 }
+@media (max-width: 1365px) {
+  .price__item--checked {
+    width: 440px;
+    padding: 60px 77px 65px 78px;
+  }
+}
 @media (max-width: 767px) {
   .price__item--checked {
     width: 290px;
@@ -2075,6 +2081,12 @@ p {
   padding-bottom: 120px;
   color: #ffffff;
 }
+@media (max-width: 1365px) {
+  .games {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
 
 .games__text-wrapper {
   display: -webkit-box;
@@ -2088,12 +2100,28 @@ p {
   padding: 80px;
   background-color: #ed0233;
 }
+@media (max-width: 1365px) {
+  .games__item--text {
+    padding: 45px 40px 45px 40px;
+  }
+}
 
 .games__title {
   font-size: 82px;
   line-height: 76px;
   letter-spacing: 0.03em;
   width: 180px;
+}
+@media (max-width: 1365px) {
+  .games__title {
+    font-size: 48px;
+    line-height: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .games__title {
+    color: #ffffff;
+  }
 }
 
 .games__date-time {

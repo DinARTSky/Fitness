@@ -3,6 +3,11 @@
   padding-top: 120px;
   padding-bottom: 120px;
   color: #ffffff;
+
+  @include vp-1365 {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }
 
 .games__text-wrapper {
@@ -14,6 +19,10 @@
 .games__item--text {
   padding: 80px;
   background-color: #ed0233;
+
+  @include vp-1365 {
+    padding: 45px 40px 45px 40px;
+  }
 }
 
 
@@ -22,6 +31,15 @@
   line-height: 76px;
   letter-spacing: 0.03em;
   width: 180px;
+
+  @include vp-1365 {
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  @include vp-767 {
+    color: #ffffff;
+  }
 }
 
 .games__date-time {
