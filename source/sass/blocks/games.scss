@@ -8,12 +8,22 @@
     padding-top: 80px;
     padding-bottom: 40px;
   }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
 }
 
 .games__text-wrapper {
   display: flex;
   gap: 68px;
   margin-bottom: 22px;
+
+  @include vp-1365 {
+    gap: 40px;
+    margin-bottom: 6px;
+  }
 }
 
 .games__item--text {
@@ -21,7 +31,17 @@
   background-color: #ed0233;
 
   @include vp-1365 {
-    padding: 45px 40px 45px 40px;
+    padding: 40px 46px 40px 45px;
+  }
+
+  @include vp-767 {
+    padding: 40px;
+  }
+}
+
+.games__item--image {
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -35,6 +55,7 @@
   @include vp-1365 {
     font-size: 48px;
     line-height: 46px;
+    width: 106px;
   }
 
   @include vp-767 {
@@ -47,6 +68,10 @@
   flex-direction: column;
   align-items: start;
   gap: 19px;
+
+  @include vp-1365 {
+    gap: 8px;
+  }
 }
 
 .games__caption {
@@ -55,6 +80,11 @@
   line-height: 24px;
   padding-bottom: 8px;
   margin-top: -1px;
+
+  @include vp-1365 {
+    padding-bottom: 0;
+    margin-top: -1px;
+  }
 }
 
 .games__content {
@@ -62,6 +92,11 @@
   border-top: 1px solid #ffffff;
   gap: 7px;
   padding-top: 8px;
+
+  @include vp-1365 {
+    padding-top: 4px;
+    gap: 4px;
+  }
 }
 
 .games__date {
@@ -74,18 +109,33 @@
   font-size: 40px;
   line-height: 40px;
   margin-top: -4px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: -2px;
+  }
 }
 
 .games__day-wrapper {
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  @include vp-1365 {
+    gap: 0;
+  }
 }
 
 .games__month,
 .games__year {
   font-size: 14px;
   line-height: 14px;
+
+  @include vp-1365 {
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 
 .games__content--time {
@@ -93,6 +143,12 @@
   font-size: 40px;
   line-height: 40px;
   padding-top: 5px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 2px;
+  }
 }
 
 .games__time {
@@ -105,6 +161,10 @@
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 56px;
+
+  @include vp-1365 {
+    margin-bottom: 21px;
+  }
 }
 
 .games__btn {
@@ -113,5 +173,10 @@
   padding-top: 26px;
   padding-bottom: 24px;
   display: block;
+
+  @include vp-1365 {
+    padding-top: 20px;
+  padding-bottom: 20px;
+  }
 }
 
