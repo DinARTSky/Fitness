@@ -218,7 +218,7 @@
             </div>
           </div>
         </div>
-        <p class="games__description">Ежегодные соревнования по CrossFit</p>
+        <p class="games__description">Ежегодные соревнования по&nbsp;CrossFit</p>
         <div class="games__order">
           <a class="btn games__btn">заполнить заявку</a>
         </div>
@@ -236,7 +236,96 @@
     </section>
 
     <!--Секция жюри-->
-    <section class="jury"
+    <section class="jury">
+
+      <div class="container jury__container">
+        <h2 class="title jury__title">Жюри</h2>
+        <!--<div class="jury__controls">
+          <button class="btn jury__control jury__control--prev" type="button">
+            <svg aria-hidden="true" focusable="false"
+            width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 1L0.999999 17L17 33" stroke="#102654"/>
+              </svg>
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="btn jury__control jury__control--next" type="button">
+            <svg aria-hidden="true" focusable="false"
+            width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L17 17L1 33" stroke="#102654"/>
+            </svg>
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div> -->
+      <div class="jury__slider">
+          <ul class="jury__controls list-reset">
+            <li class="jury__control">
+              <button class="btn jury__control--prev" type="button">
+                <svg class="jury__control--svg" aria-hidden="true" focusable="false"
+                  width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 1L0.999999 17L17 33" stroke="#102654"/>
+                </svg>
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+            </li>
+            <li class="jury__control">
+              <button class="btn jury__control--next" type="button">
+                <svg class="jury__control--svg" aria-hidden="true" focusable="false"
+                width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L17 17L1 33" stroke="#102654"/>
+                </svg>
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="jury__list list-reset">
+            <li class="jury__item jury__item--pavlova">
+              <h3 class="title jury__name">Анна Павлова</h3>
+              <picture>
+                <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">-->
+                <source media="(min-width: 1366px)" srcset="img/anna-pavlova-desktop.jpg 1x, img/anna-pavlova-desktop@2x.jpg 2x" width="660" height="500">
+                <source media="(min-width: 768px)" srcset="img/anna-pavlova-tablet.jpg 1x, img/anna-pavlova-tablet@2x.jpg 2x">
+                <img class="games__image" src="img/games-mobile.jpg" alt="Фото спортсмена" width="660" height="500">
+              </picture>
+            </li>
+            <li class="jury__item jury__item--lavrov">
+              <h3 class="title jury__name">Алексей Лавров</h3>
+              <picture>
+                <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">-->
+                <source media="(min-width: 1366px)" srcset="img/aleksey-lavrov-desktop.jpg 1x, img/aleksey-lavrov-desktop@2x.jpg 2x" width="660" height="500">
+                <source media="(min-width: 768px)" srcset="img/aleksey-lavrov-tablet.jpg 1x, img/aleksey-lavrov-tablet@2x.jpg 2x">
+                <img class="games__image" src="img/games-mobile.jpg" alt="Фото спортсмена" width="660" height="500">
+              </picture>
+            </li>
+            <li class="jury__item jury__item--pashkov">
+              <h3 class="title jury__name">Александр Пашков</h3>
+              <picture>
+                <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">-->
+                <source media="(min-width: 1366px)" srcset="img/aleksandr-pashkov-desktop.jpg 1x, img/aleksandr-pashkov-desktop@2x.jpg 2x" width="660" height="500">
+                <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov-tablet.jpg 1x, img/aleksandr-pashkov-tablet@2x.jpg 2x">
+                <img class="games__image" src="img/aleksandr-pashkov-mobile.jpg" alt="Фото спортсмена" width="660" height="500">
+              </picture>
+            </li>
+            <li class="jury__item jury__item--ketova">
+              <h3 class="title jury__name">Мария Кетова</h3>
+              <picture>
+                <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/flat_white_img.webp 1x, images/flat_white_img@2x.webp 2x">-->
+                <source media="(min-width: 1366px)" srcset="img/maria-ketova-desktop.jpg 1x, img/maria-ketova-desktop@2x.jpg 2x" width="660" height="500">
+                <source media="(min-width: 768px)" srcset="img/maria-ketova-tablet.jpg 1x, img/maria-ketova-tablet@2x.jpg 2x">
+                <img class="games__image" src="img/games-mobile.jpg" alt="Фото спортсмена" width="660" height="500">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <div class="wrapper">
       <header>
         <div class="container"></div>

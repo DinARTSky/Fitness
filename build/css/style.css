@@ -2094,7 +2094,6 @@ p {
   display: -ms-flexbox;
   display: flex;
   padding-top: 120px;
-  padding-bottom: 120px;
   color: #ffffff;
 }
 @media (max-width: 1365px) {
@@ -2107,6 +2106,10 @@ p {
   .games {
     padding-top: 70px;
     padding-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2114,6 +2117,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 68px;
   margin-bottom: 22px;
 }
@@ -2121,6 +2127,12 @@ p {
   .games__text-wrapper {
     gap: 40px;
     margin-bottom: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .games__text-wrapper {
+    gap: 0;
+    margin-bottom: 12px;
   }
 }
 
@@ -2136,12 +2148,6 @@ p {
 @media (max-width: 767px) {
   .games__item--text {
     padding: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  .games__item--image {
-    display: none;
   }
 }
 
@@ -2194,6 +2200,12 @@ p {
   .games__caption {
     padding-bottom: 0;
     margin-top: -1px;
+  }
+}
+@media (max-width: 767px) {
+  .games__caption {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -2298,6 +2310,8 @@ p {
 @media (max-width: 1365px) {
   .games__description {
     margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -2312,6 +2326,158 @@ p {
   .games__btn {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+.jury {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1365px) {
+  .jury {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .jury {
+    padding-top: 35px;
+  }
+}
+
+.jury__title {
+  margin-bottom: 45px;
+}
+@media (max-width: 1365px) {
+  .jury__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .jury__title {
+    margin-bottom: 27px;
+  }
+}
+
+.jury__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 1365px) {
+  .jury__list {
+    gap: 32px;
+  }
+}
+
+.jury__item {
+  width: 260px;
+  height: 294px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+@media (max-width: 1365px) {
+  .jury__item {
+    width: 268px;
+  }
+}
+@media (max-width: 767px) {
+  .jury__item {
+    width: 226px;
+  }
+}
+
+.jury__name {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin-bottom: 26px;
+}
+@media (max-width: 1365px) {
+  .jury__name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .jury__name {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.jury__slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1365px) {
+  .jury__slider {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .jury__slider {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.jury__controls {
+  position: absolute;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -77px;
+  width: 113.3%;
+}
+@media (max-width: 1365px) {
+  .jury__controls {
+    width: 100%;
+    margin-left: 0;
+    margin-left: -76px;
+    width: 106.2%;
+  }
+}
+
+@media (max-width: 767px) {
+  .jury__control--svg {
+    width: 10px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .jury__item--pavlova,
+.jury__item--lavrov {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .jury__item--ketova {
+    display: none;
   }
 }
 

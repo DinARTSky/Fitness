@@ -1,7 +1,6 @@
 .games {
   display: flex;
   padding-top: 120px;
-  padding-bottom: 120px;
   color: #ffffff;
 
   @include vp-1365 {
@@ -12,17 +11,24 @@
   @include vp-767 {
     padding-top: 70px;
     padding-bottom: 40px;
+    flex-direction: column;
   }
 }
 
 .games__text-wrapper {
   display: flex;
+  justify-content: space-between;
   gap: 68px;
   margin-bottom: 22px;
 
   @include vp-1365 {
     gap: 40px;
     margin-bottom: 6px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+    margin-bottom: 12px;
   }
 }
 
@@ -38,13 +44,6 @@
     padding: 40px;
   }
 }
-
-.games__item--image {
-  @include vp-767 {
-    display: none;
-  }
-}
-
 
 .games__title {
   font-size: 82px;
@@ -84,6 +83,11 @@
   @include vp-1365 {
     padding-bottom: 0;
     margin-top: -1px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -164,6 +168,8 @@
 
   @include vp-1365 {
     margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
