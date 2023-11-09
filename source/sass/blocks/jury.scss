@@ -92,19 +92,30 @@
   z-index: 5;
   display: flex;
   justify-content: space-between;
-  margin-left: -77px;
-  width: 113.3%;
+  padding-top: 6px;
+  margin-left: -57px;
+  width: 109.8%;
 
   @include vp-1365 {
     width: 100%;
     margin-left: 0;
-    margin-left: -76px;
-    width: 106.2%;
+    margin-left: -56px;
+    width: 100.3%;
+    padding-top: 7px;
+  }
+
+  @include vp-767 {
+    margin-left: -30px;
+    padding-top: 27px;
+    width: 98.5%;
   }
 }
 
-.jury__control--svg {
+.jury__control{
+  padding: 0;
+
   @include vp-767 {
+    padding: 0;
     width: 10px;
   }
 }

@@ -2310,6 +2310,11 @@ p {
 @media (max-width: 1365px) {
   .games__description {
     margin-bottom: 21px;
+  }
+}
+@media (max-width: 767px) {
+  .games__description {
+    margin-bottom: 21px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -2450,20 +2455,33 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: -77px;
-  width: 113.3%;
+  padding-top: 6px;
+  margin-left: -57px;
+  width: 109.8%;
 }
 @media (max-width: 1365px) {
   .jury__controls {
     width: 100%;
     margin-left: 0;
-    margin-left: -76px;
-    width: 106.2%;
+    margin-left: -56px;
+    width: 100.3%;
+    padding-top: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .jury__controls {
+    margin-left: -30px;
+    padding-top: 27px;
+    width: 98.5%;
   }
 }
 
+.jury__control {
+  padding: 0;
+}
 @media (max-width: 767px) {
-  .jury__control--svg {
+  .jury__control {
+    padding: 0;
     width: 10px;
   }
 }
